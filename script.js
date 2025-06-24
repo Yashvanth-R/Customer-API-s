@@ -43,20 +43,40 @@ app.post('/api/customers', (req, res) => {
 });
 
 //Request Handler for PUT method
-// app.put('/api/customers/:id', (req,res) => {
-//     const customer = customers.find(c => c.id === parseInt(req.params.id));
-//     if(!customer) res.status(404).send('<h2 style="font-family: Malgun Gothic; color: red;">Customer not found</h2>');
+app.put('/api/customers/:id', (req,res) => {
+    const customer = customers.find(c => c.id === parseInt(req.params.id));
+    if(!customer) res.status(404).send('<h2 style="font-family: Malgun Gothic; color: red;">Customer not found</h2>');
 
-//     const 
-// )
+    const {error} = validateCustomer(req.body);
+    if (error) {
+        res.status(400).send(error.details[0].message);
+        return;
+    }
+
+    customer.title = req.body.title;
+    res.send(customer);
+});
+
+//Request Handler for DELETE method
+app.delete('/api/customers/:id', (req, res) => {
+    
+    const customer = customers.find(c => c.id === parseInt(req.params.id));
+    if (!customer) res.status(404).send('<h2 style="font-family: Malgun Gothic; color: red;">Customer not found in delete</h2>');
+
+    const index = customers.indexOf(customer);
+    customers.splice(index, 1);
+
+    res.send(customer);
+});
+
 
 //Validation Information
 function validateCustomer(customer) {
-    const schema ={
+    const schema = Joi.object({
         title: Joi.string().min(3).required()
-    };
-    return Joi.validate(customer, schema);
+    });
+    return schema.validate(customer);
 }
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3004;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
