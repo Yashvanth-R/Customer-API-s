@@ -50,7 +50,7 @@ npm i
 ```
 node script.js
 ```
-//Running the project and chacking the result in Postman
+//Running the project and checking the result in Postman
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
