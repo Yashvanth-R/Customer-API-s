@@ -1,9 +1,7 @@
 # Customer-API-s
 
 1. What’s a REST API?
-It's an architectural style for web services, built on HTTP, where clients and servers communicate using operations like GET, POST, PUT, DELETE and exchange structured data (typically JSON/XML)
-kalyaniyogeswaranathan1990.blogspot.com+4slideshare.net+4slideshare.net+4
-.
+    It's an architectural style for web services, built on HTTP, where clients and servers communicate using operations like GET, POST, PUT, DELETE and exchange structured data (typically JSON/XML)
 
 2. REST Principles Explained
 
@@ -14,7 +12,6 @@ kalyaniyogeswaranathan1990.blogspot.com+4slideshare.net+4slideshare.net+4
     Cacheable Responses: Encourages faster, scalable systems.
 
     Layered System Structure: Architecture can be composed of multiple layers (load balancers, proxies, servers) without client awareness.
-    slideshare.net+1slideshare.net+1
 
 3. HTTP Methods & Use Cases
 
@@ -25,11 +22,9 @@ kalyaniyogeswaranathan1990.blogspot.com+4slideshare.net+4slideshare.net+4
     PUT → Update existing resources
 
     DELETE → Remove resources
-    Explains when and why each method is used.
-    slideshare.net+1slideshare.net+1
 
 4. Designing APIs Effectively
-Focus on resource structure, HTTP status codes, error messaging, versioning (e.g. /v1/users), and endpoint organization (use nouns, not verbs).
+    Focus on resource structure, HTTP status codes, error messaging, versioning (e.g. /v1/users), and endpoint organization (use nouns, not verbs).
 
 5. Tools & Best Practices
 
@@ -38,3 +33,32 @@ Focus on resource structure, HTTP status codes, error messaging, versioning (e.g
     Define schemas and documentation with Swagger/OpenAPI.
 
     Implement pagination, filtering, and authentication (e.g. via API keys or OAuth).
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Working of the project:
+
+```
+git clone https://github.com/Yashvanth-R/Customer-API-s.git
+```
+
+```
+npm i
+```
+//Installing necessary packages
+
+```
+node script.js
+```
+//Running the project and chacking the result in Postman
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Contribute :thumbsup:
+--------------------------------------
+If you want to contribute in this project feel free to do that.
+
+## Licence :scroll:
+---------------------------------
+MIT © [Yashvanth-R](https://github.com/Yashvanth-R)
+
