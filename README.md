@@ -45,7 +45,6 @@ git clone https://github.com/Yashvanth-R/Customer-API-s.git
 ```
 npm i
 ```
-//Installing necessary packages
 
 ```
 node script.js
@@ -53,10 +52,6 @@ node script.js
 //Running the project and checking the result in Postman
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-## Contribute :thumbsup:
---------------------------------------
-If you want to contribute in this project feel free to do that.
 
 ## Licence :scroll:
 ---------------------------------
